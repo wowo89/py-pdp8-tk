@@ -5,6 +5,6 @@ La nuova versione 2.0 utilizza una libreria grafica differente dalle versioni pr
 
 Si è scelto quindi di utilizzare wxPython a partire dalla versione 2.0.
 
-Se avete bisogno di informazioni dettagliate andate qui : http://code.google.com/p/py-pdp8-tk/wiki/Help
+Se avete bisogno di informazioni dettagliate andate qui : https://github.com/MircoT/py-pdp8-tk/blob/wiki/Help.md
 
-Per gli esempi svolti dovete seguire questo link : http://code.google.com/p/py-pdp8-tk/wiki/Esempi_svolti
+Per gli esempi svolti dovete seguire questo link : https://github.com/MircoT/py-pdp8-tk/blob/wiki/Esempi_svolti.md
