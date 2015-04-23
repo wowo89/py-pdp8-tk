@@ -18,7 +18,7 @@ END
 ```
 
 | | ORG 100 | Contenuto |
-|:|:--------|:----------|
+| --- | --- | --- |
 |100 | LDA X |
 |101 | BSA CHK |
 |102 | INC |
@@ -36,9 +36,8 @@ END
 
 # Risoluzione Esercizio 1 #
 
-| Indirizzo |  | Contenuto di AC | Contenuto E |
-|:----------|:-|:----------------|:------------|
-| 100 | Si carica in AC X, che ha il contenuto che vedete in tabella. Il contenuto è dato dall'operatore AND (OPR = 000, quindi dal secondo al quarto bit), <br> dall'indirizzo Y (105 in hex, che va a formare la parte dal 5° al 16° bit) e da I (che non essendo presente mette a 0 il primo bit) <table><thead><th> 0000 0001 0000 0101 </th><th> 0 </th></thead><tbody>
+<table><thead><th> Indirizzo </th><th>  </th><th> Contenuto di AC </th><th> Contenuto E </th></thead><tbody>
+<tr><td> 100 </td><td> Si carica in AC X, che ha il contenuto che vedete in tabella. Il contenuto è dato dall'operatore AND (OPR = 000, quindi dal secondo al quarto bit), <br> dall'indirizzo Y (105 in hex, che va a formare la parte dal 5° al 16° bit) e da I (che non essendo presente mette a 0 il primo bit) </td><td> 0000 0001 0000 0101 0 </td><td> 0 </td></tr>
 <tr><td> 101 </td><td> Si memorizza in CHK l'indirizzo di ritorno (che è l'istruzione successiva a quella attuale, puntata gia dal PC), cioè 102 e si passa all'indirizzo successivo a CHK, <br> ovvero 107 (che verrà puntato dal PC, poiché sarà la prossima istruzione da eseguire) </td><td> 0000 0001 0000 0101 </td><td> 0 </td></tr>
 <tr><td> 107 </td><td> Spostiamo verso destra i bit in E-AC </td><td> 0000 0000 1000 0010 </td><td> 1 </td></tr>
 <tr><td> 108 </td><td> Controlliamo se AC è negativo. Visto che è falso, andiamo subito all'istruzione successiva, senza saltarla </td><td> 0000 0000 1000 0010 </td><td> 1 </td></tr>
@@ -48,16 +47,8 @@ END
 
 <h3>Risultato in AC = 0083 HEX</h3>
 
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
+<hr>
+
 <h1>Esercizio 2</h1>
 
 <pre><code>ORG 100<br>
@@ -108,16 +99,8 @@ END <br>
 
 <h3>Risultato in AC = 0001 HEX</h3>
 
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
+<hr>
+
 <h1>Esercizio 3</h1>
 
 <pre><code>ORG 100<br>
@@ -155,16 +138,8 @@ END<br>
 
 <h3>Risultato in AC = 91D3 HEX</h3>
 
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
+<hr>
+
 <h1>Esercizio 4</h1>
 
 <pre><code>ORG 100<br>
@@ -202,16 +177,8 @@ END<br>
 
 <h3>Risultato in AC = 926D HEX</h3>
 
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
+<hr>
+
 <h1>Esercizio 5</h1>
 
 <pre><code>ORG 100<br>
@@ -249,16 +216,8 @@ END<br>
 
 <h3>Risultato in X = 58B3 HEX, Y = 0102 HEX</h3>
 
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
+<hr>
+
 <h1>Esercizio 6</h1>
 
 <pre><code>ORG 100<br>
@@ -296,16 +255,8 @@ END<br>
 
 <h3>Risultato in X = 6526 HEX, Y = 0102 HEX</h3>
 
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
+<hr>
+
 <h1>Esercizio 7</h1>
 
 <pre><code>ORG 880<br>
@@ -353,16 +304,8 @@ END<br>
 
 <h2>Risultato in X = 1881 HEX, AC = 8A81</h2>
 
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
+<hr>
+
 <h1>Esercizio 8</h1>
 
 <pre><code>ORG 205<br>
@@ -399,16 +342,8 @@ END<br>
 
 <h2>Risultato in AC = 420C HEX</h2>
 
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
+<hr>
+
 <h1>Esercizio 9</h1>
 
 <pre><code>ORG 100<br>
@@ -464,16 +399,8 @@ Quale valore deve avere Y per avere come risultato in X : F040 HEX ?<br>
 <tr><td> Contenuto di X dopo l'esecuzione dell'istruzione all'indirizzo 106 </td><td>1000 0000 0000 0000 </td><td> = </td></tr>
 <tr><td>  </td><td> 1111 0000 0100 0000 </td></tr></tbody></table>
 
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
-<hr><br>
-<br>
-<br>
-<br>
+<hr>
+
 <h1>Esercizio 10</h1>
 
 <pre><code>ORG 100<br>
