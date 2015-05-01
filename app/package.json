@@ -1,0 +1,27 @@
+{
+  "name": "js-pdp8",
+  "version": "1.0.0",
+  "description": "An emulator of pdp8 with javascript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MircoT/py-pdp8-tk.git"
+  },
+  "keywords": [
+    "pdp8",
+    "javascript",
+    "electronjs"
+  ],
+  "author": "MircoT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MircoT/py-pdp8-tk/issues"
+  },
+  "homepage": "https://github.com/MircoT/py-pdp8-tk",
+  "devDependencies": {
+    "electron-prebuilt": "^0.25.1-1"
+  }
+}
