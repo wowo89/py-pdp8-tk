@@ -1,7 +1,7 @@
 {
   "name": "js-pdp8",
   "version": "1.0.0",
-  "description": "An emulator of pdp8 with javascript",
+  "description": "An emulator of pdp8 written in javascript",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

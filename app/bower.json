@@ -1,0 +1,31 @@
+{
+  "name": "js-pdp8",
+  "version": "1.0.0",
+  "homepage": "https://github.com/MircoT/py-pdp8-tk",
+  "authors": [
+    "MircoT <mirco.theone@gmail.com>"
+  ],
+  "description": "An emulator of pdp8 written in javascript",
+  "main": "main.js",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "pdp8",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "CodeMirror": "~5.2.0",
+    "angular-material-icons": "~0.4.0"
+  }
+}
