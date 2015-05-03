@@ -35,7 +35,7 @@ app.on('ready', function() {
     mainWindow = null;
   });
   
-  appIcon = new Tray('icon.png');
+  /* appIcon = new Tray('icon.png');
   var contextMenu = Menu.buildFromTemplate([
     { label: 'Item1', type: 'radio' },
     { label: 'Item2', type: 'radio' },
@@ -43,5 +43,5 @@ app.on('ready', function() {
     { label: 'Item4', type: 'radio' },
   ]);
   appIcon.setToolTip('This is my application.');
-  appIcon.setContextMenu(contextMenu);
+  appIcon.setContextMenu(contextMenu); */
 });

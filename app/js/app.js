@@ -2,7 +2,19 @@ var remote = require('remote');
 
 var app = angular.module('jsPdp8', ['ngMaterial', 'ngMdIcons']);
 
-app.controller('MainCtrl', ['$scope', function($scope){
+app.factory("$codeMirror", [function() {
+  var codeMirrorApi = {};
+  
+  codeMirrorApi.codeMirror = CodeMirror(document.body, {
+    value: "function myScript(){return 100;}\n",
+    mode:  "javascript",
+    theme: "monokai"
+  });
+  
+  return codeMirrorApi;
+}]);
+
+app.controller('MainCtrl', ['$scope', '$codeMirror', function($scope, $codeMirror){
   var devTools = false;
   
   $scope.toggleDevTools = function() { 
@@ -18,3 +30,5 @@ app.controller('MainCtrl', ['$scope', function($scope){
   };
  
 }]);
+
+
