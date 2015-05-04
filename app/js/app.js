@@ -6,8 +6,8 @@ app.factory("$codeMirror", [function() {
   var codeMirrorApi = {};
   
   codeMirrorApi.codeMirror = CodeMirror(document.body, {
-    value: "function myScript(){return 100;}\n",
-    mode:  "javascript",
+    value: "ORG 100\nLDA X\nBSA CHK\nINC\nHLT\nX, AND Y\nY, HEX 200\nCHK, HEX 0\nCIR\nSNA\nBUN CHK I\nADD X\nBUN CHK I\nEND",
+    mode:  "pdp8",
     theme: "monokai"
   });
   
