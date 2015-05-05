@@ -48,25 +48,19 @@ CodeMirror.defineMode("pdp8", function(_config, parserConfig) {
 
       if (stream.eatWhile(/[\w\-]/)) {
         w = stream.current();
-        console.log("word: '" + w + "' test: " + hex_dec.test(w));
         if (keywords.mri.test(w) || keywords.rri.test(w) || keywords.io.test(w)) {
-          console.log("KEYWORD");
           return 'keyword';
         }
         else if(numbers.test(w)) {
-          console.log("NUMBER");
           return 'number';
         }
         else if(preprocessor.test(w)) {
-          console.log("PREPROCESSOR");
           return 'comment';
         }
         else if(hex_dec.test(w)) {
-          console.log("HEX_DEC");
           return 'variable-2';
         }
         else if(!indirect.test(w)) {
-          console.log("VARIABLE");
           return 'string';
         }
       }
